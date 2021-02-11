@@ -28,9 +28,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Candy Crush Jelly"
-            app:layout_constraintTop_toBottomOf="@+id/image_game"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toBottomOf="@+id/image_game"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chip_group_consoles"

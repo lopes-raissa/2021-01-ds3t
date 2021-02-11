@@ -17,14 +17,14 @@ class GameAdapter(): RecyclerView.Adapter<GameViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GameViewHolder {
-       val view =  LayoutInflater.from(parent.context).inflate(R.layout.holder_game_layout, parent, false)
+        val view =  LayoutInflater.from(parent.context).inflate(R.layout.holder_game_layout, parent, false)
 
         return GameViewHolder(view)
 
     }
 
     override fun getItemCount(): Int {
-       return gameList.size
+        return gameList.size
     }
 
     override fun onBindViewHolder(holder: GameViewHolder, position: Int) {
