@@ -28,19 +28,22 @@ class ConsoleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.holder_console_layout, container, false)
+        val view = inflater.inflate(R.layout.frangment_console, container, false)
 
-    //Instanciar a RecyclerView
-    recyclerConsole= view.findViewById(R.id.recycler_view_consoles)
+        //Instanciar a RecyclerView
+        recyclerConsole= view.findViewById(R.id.recycler_view_consoles)
 
-    //Determinar a orientação da RecyclerView
-    recyclerConsole.layoutManager = LinearLayoutManager(view.context)
+        //Determinar a orientação da RecyclerView
+        recyclerConsole.layoutManager = LinearLayoutManager(view.context)
 
-    //Informar para a recyclerview qual é o adaptor que ela vai usar
-    recyclerConsole.adapter = consoleAdapter
+        //Informar para a recyclerview qual é o adaptor que ela vai usar
+        recyclerConsole.adapter = consoleAdapter
 
-    //Dizer ao adapter qual a fonte de dados
-    consoleList = ConsoleDataSource.getConsole(view.context)
+        //Dizer ao adapter qual a fonte de dados
+        consoleList = ConsoleDataSource.getConsole(view.context)
+
+        //Atualizar a lista de jogos do adapter
+        consoleAdapter.updateGameList(consoleList)
 
 
     return view

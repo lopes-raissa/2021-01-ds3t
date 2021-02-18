@@ -11,23 +11,23 @@ class ConsoleDataSource {
             var console = ArrayList<Console>()
 
 
+            console.add(Console(1, "X-Box One",
+                "Xbox One é um console da Microsoft, lançado no dia 22 de novembro de 2013. O videogame tem duas versões alternativas: Xbox One S e Xbox One X",
+                context.getDrawable(R.drawable.xbox)!!
+                ))
             console.add(
                 Console(
-                    1,
-                    "Candy Crush Jelly", context.getDrawable(R.drawable.xbox) !!,
-                    "Candy Crush Jelly é versão da franquia de jogos Candy Crush. Se diverta fazendo combinações de doces e desafiando a rainha."
-            ))
-            console.add(
-                Console(
-                    1,
-                    "Candy Crush Jelly", context.getDrawable(R.drawable.xbox) !!,
-                    "Candy Crush Jelly é versão da franquia de jogos Candy Crush. Se diverta fazendo combinações de doces e desafiando a rainha."
+                    2,
+                    "PlayStation 4",
+                    "O PlayStation 4, ou PS4 é um video game da Sony lançado em 2013. O console tem três versões principais: fat, slim e Pro.",
+                    context.getDrawable(R.drawable.ps4)!!
                 ))
             console.add(
                     Console(
-                        1,
-                        "Candy Crush Jelly", context.getDrawable(R.drawable.xbox) !!,
-                        "Candy Crush Jelly é versão da franquia de jogos Candy Crush. Se diverta fazendo combinações de doces e desafiando a rainha."
+                        3,
+                        "PlayStation 1",
+                        "O PlayStation 1 ou ainda PSOne, foi o primeiro console de vídeo game fabricado pela Sony, lançado em 3 de dezembro de 1994 no Japão.",
+                        context.getDrawable(R.drawable.ps1)!!
                     ))
 
 
